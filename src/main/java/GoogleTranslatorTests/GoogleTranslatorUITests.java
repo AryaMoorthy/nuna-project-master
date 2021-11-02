@@ -56,7 +56,7 @@ public class GoogleTranslatorUITests extends GoogleTranslatorUITestBase {
     }
 
     @Test(description = "Verify a text in German is transaltaed to Spanish", dependsOnMethods = "verifySwapLanguageButton")
-    void verifyUserCanClearExistingContentsAndTypeNewTextUsingOnlineKeyBoard() {
+    void verifyUserCanClearExistingContentsAndTypeNewTextUsingOnlineKeyBoard() throws InterruptedException {
         _logger.info("Clear the source text area and open the online keyboard");
         _googleTranslatorPageObjects.clearTextInSourceTextArea();
         _googleTranslatorPageObjects.clickKeyBoard();

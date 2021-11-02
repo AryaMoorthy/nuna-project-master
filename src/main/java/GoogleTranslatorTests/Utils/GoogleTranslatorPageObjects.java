@@ -59,7 +59,7 @@ public class GoogleTranslatorPageObjects {
 
     public void clickSwapLanguagesButton() throws InterruptedException {
         getWebdriverWait().until(ExpectedConditions.elementToBeClickable(SWAP_LANGUAGES));
-        Thread.sleep(3000);
+        Thread.sleep(4000);
         _seleniumHelper.click(SWAP_LANGUAGES);
     }
 
@@ -78,12 +78,12 @@ public class GoogleTranslatorPageObjects {
         _seleniumHelper.click(KEYBOARD_DROP_DOWN_FIRST_ITEM);
     }
 
-    public void typeHiUsingOnlineKeyBoard()
-    {
+    public void typeHiUsingOnlineKeyBoard() throws InterruptedException {
         _seleniumHelper.click(SHIFT_KEY);
         _seleniumHelper.click(LETTER_H);
         _seleniumHelper.click(LETTER_I);
         _seleniumHelper.click(SHIFT_KEY);
+        Thread.sleep(1000);
         _seleniumHelper.click(EXCLAMATION_KEY);
     }
 
