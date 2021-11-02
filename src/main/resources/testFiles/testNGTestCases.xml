@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Add required upgrade tests to be run as part of the suite-->
+
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Google Translator UI Tests" parallel="true" thread-count="20" time-out="1800000">
+    <parameter name="" value="codingChallenge"/>
+
+    <test name="Google Translator UI Tests">
+        <classes>
+            <class name="GoogleTranslatorTests.GoogleTranslatorUITests"/>
+        </classes>
+    </test>
+</suite>
