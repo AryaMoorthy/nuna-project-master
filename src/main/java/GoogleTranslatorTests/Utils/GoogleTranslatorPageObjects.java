@@ -59,8 +59,8 @@ public class GoogleTranslatorPageObjects {
 
     public void clickSwapLanguagesButton() throws InterruptedException {
         getWebdriverWait().until(ExpectedConditions.elementToBeClickable(SWAP_LANGUAGES));
-        Thread.sleep(4000);
         _seleniumHelper.click(SWAP_LANGUAGES);
+        Thread.sleep(4000);
     }
 
     public void clearTextInSourceTextArea()
